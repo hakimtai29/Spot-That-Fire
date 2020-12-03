@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .reports {
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .reports th {
+            padding: 25px;
+        }
+        #data{
+            margin-left: 50px;
+            padding : 25px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <table class="reports">
+        <tr>
+            <th>ID</th>
+            <th>Longitude</th>
+            <th>Latitude</th>
+            <th>Count</th>
+            <th>Time</th>
+            <th>Address</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>View</th>
+        </tr>
+        
+    </table>
+
+    <div id="edit-popup" style="display: none">
+     <textarea id="text-edit"></textarea>
+     <button id="Submit" onclick = "editSend()">Save</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
